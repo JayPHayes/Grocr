@@ -13,9 +13,20 @@
 		97939CD11DFED94B009C506A /* Grocr_JP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97939CCF1DFED94B009C506A /* Grocr_JP.xcdatamodeld */; };
 		97939CD31DFED94B009C506A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97939CD21DFED94B009C506A /* Assets.xcassets */; };
 		97939CD61DFED94B009C506A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97939CD41DFED94B009C506A /* LaunchScreen.storyboard */; };
+		97939CDE1DFEDCFB009C506A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97939CDD1DFEDCFB009C506A /* LoginViewController.swift */; };
+		97939CE01DFEDD18009C506A /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97939CDF1DFEDD18009C506A /* GroceryListTableViewController.swift */; };
+		97939CE21DFEDE17009C506A /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97939CE11DFEDE17009C506A /* OnlineUsersTableViewController.swift */; };
+		97939CE51DFEDEDE009C506A /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97939CE41DFEDEDE009C506A /* GroceryItem.swift */; };
+		97939CE71DFEDEEF009C506A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97939CE61DFEDEEF009C506A /* User.swift */; };
+		97939CEA1DFEE7A1009C506A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97939CE91DFEE7A1009C506A /* GoogleService-Info.plist */; };
+		97939CEC1DFF5CFC009C506A /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97939CEB1DFF5CFC009C506A /* GroceryListViewController.swift */; };
+		97939CEF1DFF6610009C506A /* OnlineUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97939CEE1DFF6610009C506A /* OnlineUsersViewController.swift */; };
+		F2E61883EB96DDA7A2C1608A /* Pods_Grocr_JP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77587E656FA70B67518582FF /* Pods_Grocr_JP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BE58E0F7E7B7A69DD7D74E8 /* Pods-Grocr-JP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocr-JP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grocr-JP/Pods-Grocr-JP.release.xcconfig"; sourceTree = "<group>"; };
+		77587E656FA70B67518582FF /* Pods_Grocr_JP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grocr_JP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97939CC51DFED94B009C506A /* Grocr-JP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocr-JP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97939CC81DFED94B009C506A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97939CCA1DFED94B009C506A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,15 @@
 		97939CD21DFED94B009C506A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97939CD51DFED94B009C506A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97939CD71DFED94B009C506A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97939CDD1DFEDCFB009C506A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		97939CDF1DFEDD18009C506A /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
+		97939CE11DFEDE17009C506A /* OnlineUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineUsersTableViewController.swift; sourceTree = "<group>"; };
+		97939CE41DFEDEDE009C506A /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		97939CE61DFEDEEF009C506A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		97939CE91DFEE7A1009C506A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		97939CEB1DFF5CFC009C506A /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
+		97939CEE1DFF6610009C506A /* OnlineUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineUsersViewController.swift; sourceTree = "<group>"; };
+		F0A38726F64B05E252F8CE5A /* Pods-Grocr-JP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocr-JP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grocr-JP/Pods-Grocr-JP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E61883EB96DDA7A2C1608A /* Pods_Grocr_JP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EE99F9793007E4F53683F4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0A38726F64B05E252F8CE5A /* Pods-Grocr-JP.debug.xcconfig */,
+				4BE58E0F7E7B7A69DD7D74E8 /* Pods-Grocr-JP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A92182B74D594B85755C494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77587E656FA70B67518582FF /* Pods_Grocr_JP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		97939CBC1DFED94B009C506A = {
 			isa = PBXGroup;
 			children = (
 				97939CC71DFED94B009C506A /* Grocr-JP */,
-				97939CC61DFED94B009C506A /* Products */,
+				2EE99F9793007E4F53683F4A /* Pods */,
+				4A92182B74D594B85755C494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,11 +90,14 @@
 				97939CC51DFED94B009C506A /* Grocr-JP.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		97939CC71DFED94B009C506A /* Grocr-JP */ = {
 			isa = PBXGroup;
 			children = (
+				97939CE81DFEDEF5009C506A /* Models */,
+				97939CE31DFEDE2D009C506A /* ViewControllers */,
 				97939CC81DFED94B009C506A /* AppDelegate.swift */,
 				97939CCA1DFED94B009C506A /* ViewController.swift */,
 				97939CCC1DFED94B009C506A /* Main.storyboard */,
@@ -63,8 +105,39 @@
 				97939CD41DFED94B009C506A /* LaunchScreen.storyboard */,
 				97939CD71DFED94B009C506A /* Info.plist */,
 				97939CCF1DFED94B009C506A /* Grocr_JP.xcdatamodeld */,
+				97939CE91DFEE7A1009C506A /* GoogleService-Info.plist */,
+				97939CED1DFF5F28009C506A /* HOld */,
+				97939CC61DFED94B009C506A /* Products */,
 			);
 			path = "Grocr-JP";
+			sourceTree = "<group>";
+		};
+		97939CE31DFEDE2D009C506A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				97939CDD1DFEDCFB009C506A /* LoginViewController.swift */,
+				97939CEB1DFF5CFC009C506A /* GroceryListViewController.swift */,
+				97939CEE1DFF6610009C506A /* OnlineUsersViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		97939CE81DFEDEF5009C506A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97939CE61DFEDEEF009C506A /* User.swift */,
+				97939CE41DFEDEDE009C506A /* GroceryItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		97939CED1DFF5F28009C506A /* HOld */ = {
+			isa = PBXGroup;
+			children = (
+				97939CE11DFEDE17009C506A /* OnlineUsersTableViewController.swift */,
+				97939CDF1DFEDD18009C506A /* GroceryListTableViewController.swift */,
+			);
+			name = HOld;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97939CDA1DFED94B009C506A /* Build configuration list for PBXNativeTarget "Grocr-JP" */;
 			buildPhases = (
+				43D7BB7842FAE6900DF45C6B /* [CP] Check Pods Manifest.lock */,
 				97939CC11DFED94B009C506A /* Sources */,
 				97939CC21DFED94B009C506A /* Frameworks */,
 				97939CC31DFED94B009C506A /* Resources */,
+				6ACC065B60413A7E7E9A795B /* [CP] Embed Pods Frameworks */,
+				89A135706E295F1C936F96AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,18 +205,74 @@
 			files = (
 				97939CD61DFED94B009C506A /* LaunchScreen.storyboard in Resources */,
 				97939CD31DFED94B009C506A /* Assets.xcassets in Resources */,
+				97939CEA1DFEE7A1009C506A /* GoogleService-Info.plist in Resources */,
 				97939CCE1DFED94B009C506A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43D7BB7842FAE6900DF45C6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACC065B60413A7E7E9A795B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grocr-JP/Pods-Grocr-JP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89A135706E295F1C936F96AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grocr-JP/Pods-Grocr-JP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97939CC11DFED94B009C506A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97939CDE1DFEDCFB009C506A /* LoginViewController.swift in Sources */,
 				97939CCB1DFED94B009C506A /* ViewController.swift in Sources */,
+				97939CEC1DFF5CFC009C506A /* GroceryListViewController.swift in Sources */,
+				97939CE51DFEDEDE009C506A /* GroceryItem.swift in Sources */,
+				97939CEF1DFF6610009C506A /* OnlineUsersViewController.swift in Sources */,
+				97939CE01DFEDD18009C506A /* GroceryListTableViewController.swift in Sources */,
+				97939CE71DFEDEEF009C506A /* User.swift in Sources */,
+				97939CE21DFEDE17009C506A /* OnlineUsersTableViewController.swift in Sources */,
 				97939CD11DFED94B009C506A /* Grocr_JP.xcdatamodeld in Sources */,
 				97939CC91DFED94B009C506A /* AppDelegate.swift in Sources */,
 			);
@@ -261,6 +393,7 @@
 		};
 		97939CDB1DFED94B009C506A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A38726F64B05E252F8CE5A /* Pods-Grocr-JP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F388524QXT;
@@ -274,6 +407,7 @@
 		};
 		97939CDC1DFED94B009C506A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE58E0F7E7B7A69DD7D74E8 /* Pods-Grocr-JP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F388524QXT;
@@ -304,6 +438,7 @@
 				97939CDC1DFED94B009C506A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
