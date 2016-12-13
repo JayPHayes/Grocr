@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -23,12 +24,26 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //01
+        FIRAuth.auth()!.addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                self.performSegue(withIdentifier: self.loginToList, sender: nil)
+            }
+        }
     }
     
     
     @IBAction func btnLogin(_ sender: Any) {
-        performSegue(withIdentifier: loginToList, sender: nil)
+        //01
+        FIRAuth.auth()!.addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                //03
+                self.performSegue(withIdentifier: self.loginToList, sender: nil)
+            }
+            
+        }
+        
+//        performSegue(withIdentifier: loginToList, sender: nil)
     }
     
     @IBAction func btnSignUp(_ sender: Any) {
@@ -39,7 +54,18 @@ class LoginViewController: UIViewController {
         
         let saveAction = UIAlertAction(title: "Save",
                                        style: .default) { action in
+                                        //01 Get Email and password
+                                        let txtEmail = alert.textFields![0]
+                                        let txtPassword = alert.textFields![1]
                                         
+                                        //02: Create User
+                                        FIRAuth.auth()!.createUser(withEmail: txtEmail.text!, password: txtPassword.text!, completion: { (user, error) in
+                                            if error  == nil {
+                                                //03: Sign in
+                                                FIRAuth.auth()!.signIn(withEmail: txtEmail.text!, password: txtPassword.text!, completion: nil)
+                                            }
+                                        })
+                                    
         }
         
         let cancelAction = UIAlertAction(title: "Cancel",

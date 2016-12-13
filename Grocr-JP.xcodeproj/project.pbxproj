@@ -43,6 +43,7 @@
 		97939CE91DFEE7A1009C506A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97939CEB1DFF5CFC009C506A /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		97939CEE1DFF6610009C506A /* OnlineUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineUsersViewController.swift; sourceTree = "<group>"; };
+		97B87E0C1E001FCD00CB2246 /* Grocr-JP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Grocr-JP.entitlements"; sourceTree = "<group>"; };
 		F0A38726F64B05E252F8CE5A /* Pods-Grocr-JP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocr-JP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grocr-JP/Pods-Grocr-JP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +97,7 @@
 		97939CC71DFED94B009C506A /* Grocr-JP */ = {
 			isa = PBXGroup;
 			children = (
+				97B87E0C1E001FCD00CB2246 /* Grocr-JP.entitlements */,
 				97939CE81DFEDEF5009C506A /* Models */,
 				97939CE31DFEDE2D009C506A /* ViewControllers */,
 				97939CC81DFED94B009C506A /* AppDelegate.swift */,
@@ -177,6 +179,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = F388524QXT;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -396,6 +403,7 @@
 			baseConfigurationReference = F0A38726F64B05E252F8CE5A /* Pods-Grocr-JP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Grocr-JP/Grocr-JP.entitlements";
 				DEVELOPMENT_TEAM = F388524QXT;
 				INFOPLIST_FILE = "Grocr-JP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,6 +418,7 @@
 			baseConfigurationReference = 4BE58E0F7E7B7A69DD7D74E8 /* Pods-Grocr-JP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Grocr-JP/Grocr-JP.entitlements";
 				DEVELOPMENT_TEAM = F388524QXT;
 				INFOPLIST_FILE = "Grocr-JP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

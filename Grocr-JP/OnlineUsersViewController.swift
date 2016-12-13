@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 class OnlineUsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    let userRef = FIRDatabase.database().reference(withPath: "online")
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     // MARK: Constants
     let userCell = "UserCell"
     
@@ -19,9 +26,34 @@ class OnlineUsersViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
-        currentUsers.append("hungry@person.food")
+        //currentUsers.append("hungry@person.food")
+        userRef.observe(.childAdded, with:{ snap in
+            guard let email = snap.value as? String else { return }
+            self.currentUsers.append(email)
+            
+            let row = self.currentUsers.count  - 1 //????
+            let indexPath = IndexPath(row: row, section: 0)
+            self.tableView.insertRows(at: [indexPath], with: .top)
+            
+        })
+        
+        // Remove users when the go off line
+        userRef.observe(.childRemoved, with: {snap in
+            guard let emailToFind = snap.value as? String  else { return }
+            
+            for (index, email) in self.currentUsers.enumerated() {
+                if email == emailToFind {
+                    let indexPath = IndexPath(row: index, section: 0)
+                    self.currentUsers.remove(at: index)
+                    self.tableView.deleteRows(at: [indexPath], with: .fade)
+                }
+            }
+        })
         
         
     }
